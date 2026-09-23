@@ -17,9 +17,10 @@ class Map {
         int height;
 
     public:
-        Map(int w, int h);
-        void print() const;
-        bool isWalkable(int x, int y) const;
+        Map(int w, int h); //Map size
+        void print() const; //Print map
+        void print(int playerX, int playerY) const; // Print overload to display player 
+        bool isWalkable(int x, int y) const; // Where the player can walk
 };
 
 #endif
